@@ -30,6 +30,7 @@ data class Urls(var raw: String,
     override fun describeContents(): Int  = 0
 
     companion object CREATOR : Parcelable.Creator<Urls> {
+
         override fun createFromParcel(parcel: Parcel): Urls {
             return Urls(parcel)
         }
